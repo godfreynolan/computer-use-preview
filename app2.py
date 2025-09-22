@@ -10,7 +10,7 @@ import time
 input_messages = [
     {
         "role": "user",
-        "content": "Find the weather in New York City from September 28th to October 1st."
+        "content": "Find an image of a red sports car"
     }
 ]
 
@@ -164,4 +164,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()

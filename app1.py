@@ -2,12 +2,8 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
-# load environment variables from .env file
 load_dotenv()
-
-# get the environment variable
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-# client = OpenAI()
+client = OpenAI()
 
 response = client.responses.create(
     model="computer-use-preview",
@@ -33,5 +29,4 @@ response = client.responses.create(
     },
     truncation="auto"
 )
-
 print(response.output)
